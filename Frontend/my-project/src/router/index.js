@@ -11,6 +11,7 @@ import AdminHome from '@/components/AdminHome'
 import AddDoctor from '@/components/AddDoctor'
 import Signin from '@/components/Signin'
 import Signup from '@/components/Signup'
+import ChangePassword from '@/components/ChangePassword'
 import Booking from '@/components/Booking'
 import AddSchedule from '@/components/AddSchedule'
 import AA from '@/components/aa'
@@ -82,6 +83,11 @@ const routes = [
     path: '/signup',
     name: 'Signup',
     component: Signup
+  },
+  {
+    path: '/:role/:id/changepassword',
+    name: 'ChangePassword',
+    component: ChangePassword
   },
   {
     path: '/aa',

@@ -15,7 +15,10 @@
                         <a class="nav-link cursor_type" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link cursor_type" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Book Online</a>
+                        <a class="nav-link cursor_type" onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" style="width:auto;">Book Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursor_type" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" style="width:auto;">Change Password</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link cursor_type" v-on:click="signout()">Logout</a>
@@ -34,12 +37,22 @@
             </div>
         </form>
     </div>
+    <div class="modal1" id="id02" v-if="!serverError">
+        <form class="modal2-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="containers">
+                <changePassword></changePassword>
+            </div>
+        </form>
+    </div>
     <div class="profile" v-if="!serverError">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="side-bar">
-                        <h5 class="tittle">Personal Details - User - {{ user_id }}</h5>
+                        <h5 class="tittle">Personal Details</h5>
                         <img class="img-responsive"  id="output" :src="url" alt="User" />
                         <div class="card-body">
                             <div class="doctor-profile">
@@ -140,15 +153,18 @@ import router from '../router'
 import axios from 'axios'
 import Booking from '@/components/Booking'
 import UserBookingTable from '@/components/UserBookingTable'
+import ChangePassword from '@/components/ChangePassword'
 
 export default {
   name: 'UserHome',
   components: {
     Booking,
-    UserBookingTable
+    UserBookingTable,
+    ChangePassword
   },
   data () {
     return {
+      role: 'user',
       user_id: '',
 
       url: require('../../static/img/profile.png'),
@@ -174,6 +190,7 @@ export default {
   },
   created () {
     this.user_id = this.$route.params.id
+    console.log(this.user_id)
     this.get_data()
     this.getImage()
   },

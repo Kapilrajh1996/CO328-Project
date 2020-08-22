@@ -21,18 +21,31 @@
                         <a class="nav-link cursor_type" :href="'/admin/' + admin_id + '/doctorDetail'">Doctors</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link cursor_type" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Change Password</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link cursor_type" v-on:click="signout()">Logout</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
+    <div class="modal1" id="id01" v-if="!serverError">
+        <form class="modal1-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="containers">
+                <changePassword></changePassword>
+            </div>
+        </form>
+    </div>
     <div class="profile" v-if="!serverError">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="side-bar">
-                        <h5 class="tittle">Professional Details - Admin - {{ admin_id }}</h5>
+                        <h5 class="tittle">Professional Details</h5>
                         <img class="img-responsive"  id="output" :src="url" alt="Admin" />
                         <div class="card-body">
                             <div class="doctor-profile">
@@ -126,11 +139,16 @@
 <script>
 import router from '../router'
 import axios from 'axios'
+import ChangePassword from '@/components/ChangePassword'
 
 export default {
   name: 'AdminHome',
+  components: {
+    ChangePassword
+  },
   data () {
     return {
+      role: 'admin',
       admin_id: '',
 
       url: require('../../static/img/profile.png'),
@@ -156,6 +174,7 @@ export default {
   },
   created () {
     this.admin_id = this.$route.params.id
+    console.log(this.admin_id)
     this.get_data()
     this.getImage()
   },
