@@ -37,6 +37,11 @@ public interface Doctor_repository extends JpaRepository<Doctor,Long> {
 
     @Transactional
     @Modifying
+    @Query(value = "UPDATE doctor SET password = :password WHERE doctorID = :doctorID", nativeQuery = true)
+    void updateDoctorPassword(@Param("password") String password, @Param("doctorID") Long doctorID);
+
+    @Transactional
+    @Modifying
     @Query(value = "UPDATE doctor SET id = :id WHERE doctorID = :doctorID", nativeQuery = true)
     void updateImageIDByDoctorID(@Param("id") Long id, @Param("doctorID") Long doctorID);
 
@@ -68,6 +73,10 @@ public interface Doctor_repository extends JpaRepository<Doctor,Long> {
     @Transactional
     @Query(value = "SELECT COUNT(1) FROM doctor WHERE username = :username", nativeQuery = true)
     Integer isDoctorExistByUsername(@Param("username") String username);
+
+    @Transactional
+    @Query(value = "SELECT COUNT(1) FROM doctor WHERE doctorID = :doctorID AND password = :password", nativeQuery = true)
+    Integer isDoctorExistByDoctorIDAndPassword(@Param("doctorID") Long doctorID, @Param("password") String password);
 
     @Transactional
     @Query(value = "SELECT COUNT(1) FROM doctor WHERE username = :username AND password = :password", nativeQuery = true)

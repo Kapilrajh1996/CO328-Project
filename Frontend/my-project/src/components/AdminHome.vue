@@ -264,7 +264,7 @@ export default {
       await axios.put('http://localhost:8080/Project/REST-API/logout/admin/' + this.admin_id)
         .then(response => {
           if (response.data === 'Logout Successful') {
-            alert(response.data)
+            // alert(response.data)
             router.push('/')
           } else {
             alert(response.data)

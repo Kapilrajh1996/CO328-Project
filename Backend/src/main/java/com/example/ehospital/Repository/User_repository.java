@@ -27,6 +27,11 @@ public interface User_repository  extends JpaRepository<User,Long> {
 
     @Transactional
     @Modifying
+    @Query(value = "UPDATE user SET password = :password WHERE userID = :userID", nativeQuery = true)
+    void updateUserPassword(@Param("password") String password, @Param("userID") Long userID);
+
+    @Transactional
+    @Modifying
     @Query(value = "UPDATE user SET active = :active WHERE userID = :userID", nativeQuery = true)
     void updateUserActiveStatus(@Param("active") Boolean active, @Param("userID") Long userID);
 
@@ -59,6 +64,10 @@ public interface User_repository  extends JpaRepository<User,Long> {
     @Transactional
     @Query(value = "SELECT COUNT(1) FROM user WHERE username = :username", nativeQuery = true)
     Integer isUserExistByUsername(@Param("username") String username);
+
+    @Transactional
+    @Query(value = "SELECT COUNT(1) FROM user WHERE userID = :userID AND password = :password", nativeQuery = true)
+    Integer isUserExistByUserIDAndPassword(@Param("userID") Long userID, @Param("password") String password);
 
     @Transactional
     @Query(value = "SELECT COUNT(1) FROM user WHERE username = :username AND password = :password", nativeQuery = true)

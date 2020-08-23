@@ -45,7 +45,7 @@ export default {
             // eslint-disable-next-line eqeqeq
             if (response.data != 'Incorrect username or password') {
               this.empty()
-              alert('Signin Successfull')
+              // alert('Signin Successfull')
               router.push(response.data)
             } else {
               alert(response.data)

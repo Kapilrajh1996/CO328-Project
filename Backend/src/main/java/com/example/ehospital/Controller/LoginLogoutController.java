@@ -81,4 +81,35 @@ public class LoginLogoutController {
         return "Admin " + id + " not found";
     }
 
+
+    @Transactional
+    @PutMapping(value="/changepassword/{role}/{id}", params = { "current_password", "new_password"})
+    public String findByUserName(@PathVariable("role") String role, @PathVariable("id") long id, @RequestParam("current_password") String current_password, @RequestParam("new_password") String new_password) {
+        switch (role) {
+            case "admin":
+                if (admin_repository.isAdminExistByAdminIDAndPassword(id, current_password) == 1) {
+                    admin_repository.updateAdminPassword(new_password, id);
+                    return "Password Updated Successfully";
+                } else {
+                    return "Invalid Old Password";
+                }
+            case "doctor":
+                if (doctor_repository.isDoctorExistByDoctorIDAndPassword(id, current_password) == 1) {
+                    doctor_repository.updateDoctorPassword(new_password, id);
+                    return "Password Updated Successfully";
+                } else {
+                    return "Invalid Old Password";
+                }
+            case "user":
+                if (user_repository.isUserExistByUserIDAndPassword(id, current_password) == 1) {
+                    user_repository.updateUserPassword(new_password, id);
+                    return "Password Updated Successfully";
+                } else {
+                    return "Invalid Old Password";
+                }
+            default:
+                return "Role not found";
+        }
+    }
+
 }

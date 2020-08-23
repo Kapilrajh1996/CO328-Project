@@ -27,6 +27,11 @@ public interface Admin_repository extends JpaRepository<Admin,Long> {
 
     @Transactional
     @Modifying
+    @Query(value = "UPDATE admin SET password = :password WHERE adminID = :adminID", nativeQuery = true)
+    void updateAdminPassword(@Param("password") String password, @Param("adminID") Long adminID);
+
+    @Transactional
+    @Modifying
     @Query(value = "UPDATE admin SET id = :id WHERE adminID = :adminID", nativeQuery = true)
     void updateImageIDByAdminID(@Param("id") Long id, @Param("adminID") Long adminID);
 
@@ -46,6 +51,10 @@ public interface Admin_repository extends JpaRepository<Admin,Long> {
     @Transactional
     @Query(value = "SELECT COUNT(1) FROM admin WHERE adminID = :adminID", nativeQuery = true)
     Integer isAdminExistByAdminID(@Param("adminID") Long adminID);
+
+    @Transactional
+    @Query(value = "SELECT COUNT(1) FROM admin WHERE adminID = :adminID AND password = :password", nativeQuery = true)
+    Integer isAdminExistByAdminIDAndPassword(@Param("adminID") Long adminID, @Param("password") String password);
 
     @Transactional
     @Query(value = "SELECT COUNT(1) FROM admin WHERE email = :email", nativeQuery = true)

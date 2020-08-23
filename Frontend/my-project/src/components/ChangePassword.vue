@@ -6,7 +6,7 @@
         <!-- <p>Please fill in this form to create an account!</p> -->
         <hr />
         <div class="form-group">
-            <password v-model.trim="current_password" :toggle="true" :badge="false" :showStrengthMeter="false" placeholder="Current Password" required="required" />
+            <password v-model.trim="current_password" :toggle="true" :badge="false" :showStrengthMeter="false" placeholder="Old Password" required="required" />
         </div>
         <div class="form-group">
             <password v-model.trim="new_password1" :toggle="true" :secureLength="7" placeholder="New Password" @score="showScore" @feedback="showFeedback" required="required" />
@@ -78,17 +78,14 @@ export default {
       if (this.new_password1 !== this.new_password2) {
         alert('New Password does not match')
       } else if (this.new_password1 && this.new_password2 && this.current_password && (this.new_password1 === this.new_password2)) {
-        await axios.post('http://localhost:8080/Project/REST-API/changepassword' + this.role + '/' + this.id, {
-          current_password: this.current_password,
-          new_password1: this.new_password1,
-          new_password2: this.new_password2
-        })
+        await axios.put('http://localhost:8080/Project/REST-API/changepassword/' + this.$parent.role + '/' + this.id + '?current_password=' + this.current_password + '&new_password=' + this.new_password1)
           .then(response => {
             // console.log(response.data)
             // eslint-disable-next-line eqeqeq
-            if (response.data == 'Password Changed Successfully') {
+            if (response.data == 'Password Updated Successfully') {
+              // this.empty()
               alert(response.data)
-              this.empty()
+              this.$parent.signout()
             } else {
               alert(response.data)
             }

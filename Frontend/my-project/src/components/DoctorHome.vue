@@ -227,6 +227,12 @@ export default {
     this.get_data()
     this.getImage()
   },
+  mounted: function () {
+    this.$root.$on('logout', (text) => { // here you need to use the arrow function
+      // console.log(text)
+      this.signout()
+    })
+  },
   methods: {
     focusField (name) {
       this.edited = true
@@ -313,7 +319,7 @@ export default {
       await axios.put('http://localhost:8080/Project/REST-API/logout/doctor/' + this.doctor_id)
         .then(response => {
           if (response.data === 'Logout Successful') {
-            alert(response.data)
+            // alert(response.data)
             router.push('/')
           } else {
             alert(response.data)
