@@ -41,7 +41,7 @@ export default {
     return {
       user_id: '',
 
-      bookings: {}
+      bookings: []
     }
   },
   beforeCreate: function () {
@@ -59,13 +59,21 @@ export default {
   },
   methods: {
     get_bookings: async function () {
+      this.bookings = []
       const currentObject = this
       await axios.get('http://localhost:8080/Project/REST-API/user/' + this.user_id + '/bookings')
         .then(response => {
           // eslint-disable-next-line eqeqeq
           if (response.data != '') {
-            this.bookings = response.data
+            // this.bookings = response.data
             // console.log(response.data)
+            const today = new Date()
+            // console.log(today)
+            for (var i = 0; i < response.data.length; i++) {
+              if (response.data[i].date > today.toISOString().substring(0, 10)) {
+                this.bookings.push(response.data[i])
+              }
+            }
           } else {
             // console.log('null')
             this.bookings = response.data
@@ -96,9 +104,10 @@ export default {
         .then(response => {
           // eslint-disable-next-line eqeqeq
           if (response.data == 'Booking Cancelled Successfully') {
-            this.get_bookings()
+            // this.get_bookings()
             alert(response.data)
             this.$root.$emit('updateDoctorBookingTable', 'Booked Successful')
+            this.$root.$emit('updateUserBookingTable', 'Booked Successful')
           } else {
             alert(response.data)
             this.get_bookings()
