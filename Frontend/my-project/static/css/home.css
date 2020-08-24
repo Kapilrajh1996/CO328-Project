@@ -5,6 +5,10 @@
     padding: 0;
 } */
 
+.carousel-indicators {
+    z-index: 1;
+}
+
 .abc {
     margin-top: 500px;
 }
