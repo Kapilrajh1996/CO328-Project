@@ -1,4 +1,4 @@
-<template>
+[11:28 PM, 8/24/2020] Thacha Akka: <template>
 <div class="home">
     <div id="home">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -40,17 +40,22 @@
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" v-bind:style="{ 'background-image': `url(${require('../../static/img/slides/1.jpg')})` }">
                     <div class="abc text-center">
-                        <h1>Welcome to CCC</h1>
+                        <h1>Welcome to Medi</h1>
                         <!-- <a class="btn btn-outline-light btn-lg" href="#course">Online Booking</a> -->
                     </div>
                 </div>
                 <div class="carousel-item" v-bind:style="{ 'background-image': `url(${require('../../static/img/slides/2.jpg')})` }">
-                    <!-- <div class="carousel-caption text-center">
-                        <h1>Welcome</h1>
-                        <a class="btn btn-outline-light btn-lg" href="#course">Online Booking</a>
-                    </div> -->
+                    <div class="abc text-center">
+                        <h1>Welcome to Medi</h1>
+                        <!-- <a class="btn btn-outline-light btn-lg" href="#course">Online Booking</a> -->
+                    </div>
                 </div>
-                <div class="carousel-item" v-bind:style="{ 'background-image': `url(${require('../../static/img/slides/3.jpg')})` }"></div>
+                <div class="carousel-item" v-bind:style="{ 'background-image': `url(${require('../../static/img/slides/3.jpg')})` }">
+                    <div class="abc text-center">
+                        <h1>Welcome to Medi</h1>
+                        <!-- <a class="btn btn-outline-light btn-lg" href="#course">Online Booking</a> -->
+                    </div>
+                </div>
             </div>
 
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -91,7 +96,6 @@
                     <div class="col-lg-6">
                         <div class="section_title mb-55 text-center">
                             <h3>Our Doctors</h3>
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p> -->
                         </div>
                     </div>
                 </div>
@@ -99,15 +103,15 @@
                     <div class="row">
                         <div class="col-md-12 nav-link-wrap">
                             <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#neurologist" role="tab" aria-controls="v-pills-1" aria-selected="true" v-on:click="set_department('neurologist')">Neurology</a>
+                                <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#neurologist" role="tab" aria-controls="v-pills-1" aria-selected="true" v-on:click="set_department('cardiology')">Cardiology</a>
 
-                                <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#surgical" role="tab" aria-controls="v-pills-2" aria-selected="false" v-on:click="set_department('surgical')">Surgical</a>
+                                <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#surgical" role="tab" aria-controls="v-pills-2" aria-selected="false" v-on:click="set_department('dental')">Dental</a>
 
-                                <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#dental" role="tab" aria-controls="v-pills-3" aria-selected="false" v-on:click="set_department('dental')">Dental</a>
+                                <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#dental" role="tab" aria-controls="v-pills-3" aria-selected="false" v-on:click="set_department('dermatology')">Dermatology</a>
 
-                                <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#ophthalmology" role="tab" aria-controls="v-pills-4" aria-selected="false" v-on:click="set_department('ophthalmology')">Ophthalmology</a>
+                                <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#ophthalmology" role="tab" aria-controls="v-pills-4" aria-selected="false" v-on:click="set_department('neurology')">Neurology</a>
 
-                                <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#cardiologist" role="tab" aria-controls="v-pills-5" aria-selected="false" v-on:click="set_department('cardiologist')">Cardiology</a>
+                                <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#cardiologist" role="tab" aria-controls="v-pills-5" aria-selected="false" v-on:click="set_department('ophthalmology')">Ophthalmology</a>
                             </div>
                         </div>
                     </div>
@@ -250,7 +254,7 @@ export default {
       url: require('../../static/img/profile.png'),
       url2: require('../../static/img/profile.png'),
 
-      selected_department: 'neurologist',
+      selected_department: 'cardiology',
       doctors: '',
       images: '',
       urls: {},
