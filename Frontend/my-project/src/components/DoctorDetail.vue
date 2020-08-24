@@ -32,15 +32,15 @@
                     <div class="row">
                         <div class="col-md-12 nav-link-wrap">
                             <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#neurologist" role="tab" aria-controls="v-pills-1" aria-selected="true" v-on:click="set_department('neurologist')">Neurology</a>
+                                <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#neurologist" role="tab" aria-controls="v-pills-1" aria-selected="true" v-on:click="set_department('cardiology')">Cardiology</a>
 
-                                <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#surgical" role="tab" aria-controls="v-pills-2" aria-selected="false" v-on:click="set_department('surgical')">Surgical</a>
+                                <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#surgical" role="tab" aria-controls="v-pills-2" aria-selected="false" v-on:click="set_department('dental')">Dental</a>
 
-                                <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#dental" role="tab" aria-controls="v-pills-3" aria-selected="false" v-on:click="set_department('dental')">Dental</a>
+                                <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#dental" role="tab" aria-controls="v-pills-3" aria-selected="false" v-on:click="set_department('dermatology')">Dermatology</a>
 
-                                <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#ophthalmology" role="tab" aria-controls="v-pills-4" aria-selected="false" v-on:click="set_department('ophthalmology')">Ophthalmology</a>
+                                <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#ophthalmology" role="tab" aria-controls="v-pills-4" aria-selected="false" v-on:click="set_department('neurology')">Neurology</a>
 
-                                <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#cardiologist" role="tab" aria-controls="v-pills-5" aria-selected="false" v-on:click="set_department('cardiologist')">Cardiology</a>
+                                <a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#cardiologist" role="tab" aria-controls="v-pills-5" aria-selected="false" v-on:click="set_department('ophthalmology')">Ophthalmology</a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ export default {
       url: require('../../static/img/profile.png'),
       url2: require('../../static/img/profile.png'),
 
-      selected_department: 'neurologist',
+      selected_department: 'cardiology',
       doctors: '',
       images: '',
       urls: {},
