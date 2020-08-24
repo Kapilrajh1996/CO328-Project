@@ -1,142 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597775246885" clover="3.2.0">
-  <project timestamp="1597775246885" name="All files">
-    <metrics statements="124" coveredstatements="6" conditionals="79" coveredconditionals="8" methods="33" coveredmethods="4" elements="236" coveredelements="18" complexity="0" loc="124" ncloc="124" packages="1" files="4" classes="4"/>
-    <file name="AppHeader.vue" path="C:\Users\user\Desktop\Testing\Source Code\Frontend\my-project\src\components\AppHeader.vue">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="11" count="2" type="stmt"/>
-    </file>
-    <file name="Signup.vue" path="C:\Users\user\Desktop\Testing\Source Code\Frontend\my-project\src\components\Signup.vue">
-      <metrics statements="33" coveredstatements="5" conditionals="25" coveredconditionals="8" methods="9" coveredmethods="3"/>
-      <line num="51" count="1" type="stmt"/>
-      <line num="52" count="1" type="stmt"/>
-      <line num="60" count="2" type="stmt"/>
-      <line num="74" count="2" type="stmt"/>
-      <line num="78" count="2" type="cond" truecount="8" falsecount="0"/>
-      <line num="83" count="0" type="stmt"/>
-      <line num="84" count="0" type="stmt"/>
-      <line num="87" count="0" type="stmt"/>
-      <line num="88" count="0" type="stmt"/>
-      <line num="91" count="0" type="stmt"/>
-      <line num="92" count="0" type="stmt"/>
-      <line num="93" count="0" type="stmt"/>
-      <line num="94" count="0" type="stmt"/>
-      <line num="95" count="0" type="stmt"/>
-      <line num="96" count="0" type="stmt"/>
-      <line num="97" count="0" type="stmt"/>
-      <line num="100" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="101" count="0" type="stmt"/>
-      <line num="102" count="0" type="cond" truecount="0" falsecount="9"/>
-      <line num="103" count="0" type="stmt"/>
-      <line num="112" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="113" count="0" type="stmt"/>
-      <line num="114" count="0" type="stmt"/>
-      <line num="116" count="0" type="stmt"/>
-      <line num="120" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="123" count="0" type="stmt"/>
-      <line num="124" count="0" type="stmt"/>
-      <line num="125" count="0" type="stmt"/>
-      <line num="127" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="129" count="0" type="stmt"/>
-      <line num="132" count="0" type="stmt"/>
-      <line num="134" count="0" type="stmt"/>
-      <line num="137" count="0" type="stmt"/>
-    </file>
-    <file name="UserHome.vue" path="C:\Users\user\Desktop\Testing\Source Code\Frontend\my-project\src\components\UserHome.vue">
-      <metrics statements="88" coveredstatements="0" conditionals="54" coveredconditionals="0" methods="21" coveredmethods="0"/>
-      <line num="139" count="0" type="stmt"/>
-      <line num="140" count="0" type="stmt"/>
-      <line num="141" count="0" type="stmt"/>
-      <line num="142" count="0" type="stmt"/>
-      <line num="151" count="0" type="stmt"/>
-      <line num="173" count="0" type="stmt"/>
-      <line num="176" count="0" type="stmt"/>
-      <line num="177" count="0" type="stmt"/>
-      <line num="178" count="0" type="stmt"/>
-      <line num="182" count="0" type="stmt"/>
-      <line num="183" count="0" type="stmt"/>
-      <line num="184" count="0" type="stmt"/>
-      <line num="187" count="0" type="stmt"/>
-      <line num="191" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="194" count="0" type="stmt"/>
-      <line num="195" count="0" type="stmt"/>
-      <line num="197" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="198" count="0" type="stmt"/>
-      <line num="200" count="0" type="stmt"/>
-      <line num="204" count="0" type="stmt"/>
-      <line num="205" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="208" count="0" type="stmt"/>
-      <line num="209" count="0" type="stmt"/>
-      <line num="210" count="0" type="stmt"/>
-      <line num="211" count="0" type="stmt"/>
-      <line num="212" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="214" count="0" type="stmt"/>
-      <line num="217" count="0" type="stmt"/>
-      <line num="219" count="0" type="stmt"/>
-      <line num="223" count="0" type="stmt"/>
-      <line num="224" count="0" type="stmt"/>
-      <line num="232" count="0" type="stmt"/>
-      <line num="233" count="0" type="stmt"/>
-      <line num="236" count="0" type="stmt"/>
-      <line num="237" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="238" count="0" type="stmt"/>
-      <line num="239" count="0" type="stmt"/>
-      <line num="240" count="0" type="stmt"/>
-      <line num="241" count="0" type="stmt"/>
-      <line num="243" count="0" type="cond" truecount="0" falsecount="4"/>
+<coverage generated="1598295675041" clover="3.2.0">
+  <project timestamp="1598295675041" name="All files">
+    <metrics statements="83" coveredstatements="0" conditionals="34" coveredconditionals="0" methods="20" coveredmethods="0" elements="137" coveredelements="0" complexity="0" loc="83" ncloc="83" packages="1" files="1" classes="1"/>
+    <file name="Home.vue" path="D:\6th SEMESTER\CO328\CO328-Project\Frontend\my-project\src\components\Home.vue">
+      <metrics statements="83" coveredstatements="0" conditionals="34" coveredconditionals="0" methods="20" coveredmethods="0"/>
+      <line num="242" count="0" type="stmt"/>
+      <line num="243" count="0" type="stmt"/>
       <line num="244" count="0" type="stmt"/>
-      <line num="246" count="0" type="stmt"/>
-      <line num="248" count="0" type="stmt"/>
-      <line num="250" count="0" type="stmt"/>
-      <line num="254" count="0" type="stmt"/>
-      <line num="256" count="0" type="stmt"/>
-      <line num="258" count="0" type="stmt"/>
-      <line num="263" count="0" type="stmt"/>
-      <line num="265" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="266" count="0" type="stmt"/>
-      <line num="267" count="0" type="stmt"/>
-      <line num="269" count="0" type="stmt"/>
-      <line num="273" count="0" type="stmt"/>
-      <line num="277" count="0" type="stmt"/>
-      <line num="278" count="0" type="stmt"/>
-      <line num="280" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="281" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="282" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="283" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="284" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="285" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="287" count="0" type="stmt"/>
+      <line num="253" count="0" type="stmt"/>
+      <line num="276" count="0" type="stmt"/>
+      <line num="279" count="0" type="stmt"/>
+      <line num="282" count="0" type="stmt"/>
+      <line num="284" count="0" type="stmt"/>
+      <line num="290" count="0" type="stmt"/>
       <line num="291" count="0" type="stmt"/>
-      <line num="292" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="295" count="0" type="stmt"/>
-      <line num="296" count="0" type="stmt"/>
+      <line num="293" count="0" type="stmt"/>
       <line num="297" count="0" type="stmt"/>
       <line num="298" count="0" type="stmt"/>
-      <line num="299" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="301" count="0" type="stmt"/>
+      <line num="302" count="0" type="stmt"/>
       <line num="304" count="0" type="stmt"/>
+      <line num="305" count="0" type="stmt"/>
       <line num="306" count="0" type="stmt"/>
-      <line num="310" count="0" type="cond" truecount="0" falsecount="6"/>
+      <line num="307" count="0" type="stmt"/>
       <line num="311" count="0" type="stmt"/>
-      <line num="320" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="312" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="315" count="0" type="stmt"/>
+      <line num="316" count="0" type="stmt"/>
+      <line num="317" count="0" type="stmt"/>
+      <line num="318" count="0" type="stmt"/>
+      <line num="319" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="321" count="0" type="stmt"/>
-      <line num="322" count="0" type="stmt"/>
       <line num="324" count="0" type="stmt"/>
-      <line num="325" count="0" type="stmt"/>
-      <line num="329" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="332" count="0" type="stmt"/>
-      <line num="333" count="0" type="stmt"/>
+      <line num="326" count="0" type="stmt"/>
+      <line num="330" count="0" type="stmt"/>
+      <line num="331" count="0" type="stmt"/>
+      <line num="333" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="334" count="0" type="stmt"/>
-      <line num="335" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="335" count="0" type="stmt"/>
       <line num="337" count="0" type="stmt"/>
+      <line num="338" count="0" type="stmt"/>
       <line num="340" count="0" type="stmt"/>
-      <line num="342" count="0" type="stmt"/>
-      <line num="345" count="0" type="stmt"/>
-    </file>
-    <file name="aa.vue" path="C:\Users\user\Desktop\Testing\Source Code\Frontend\my-project\src\components\aa.vue">
-      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <line num="10" count="0" type="stmt"/>
-      <line num="16" count="0" type="stmt"/>
+      <line num="343" count="0" type="stmt"/>
+      <line num="344" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="347" count="0" type="stmt"/>
+      <line num="348" count="0" type="stmt"/>
+      <line num="349" count="0" type="stmt"/>
+      <line num="350" count="0" type="stmt"/>
+      <line num="351" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="353" count="0" type="stmt"/>
+      <line num="356" count="0" type="stmt"/>
+      <line num="358" count="0" type="stmt"/>
+      <line num="362" count="0" type="stmt"/>
+      <line num="363" count="0" type="stmt"/>
+      <line num="365" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="366" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="367" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="368" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="369" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="370" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="371" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="372" count="0" type="stmt"/>
+      <line num="375" count="0" type="stmt"/>
+      <line num="376" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="379" count="0" type="stmt"/>
+      <line num="380" count="0" type="stmt"/>
+      <line num="381" count="0" type="stmt"/>
+      <line num="382" count="0" type="stmt"/>
+      <line num="383" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="385" count="0" type="stmt"/>
+      <line num="388" count="0" type="stmt"/>
+      <line num="390" count="0" type="stmt"/>
+      <line num="394" count="0" type="stmt"/>
+      <line num="396" count="0" type="stmt"/>
+      <line num="398" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="399" count="0" type="stmt"/>
+      <line num="401" count="0" type="stmt"/>
+      <line num="403" count="0" type="stmt"/>
+      <line num="406" count="0" type="stmt"/>
+      <line num="407" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="410" count="0" type="stmt"/>
+      <line num="411" count="0" type="stmt"/>
+      <line num="412" count="0" type="stmt"/>
+      <line num="413" count="0" type="stmt"/>
+      <line num="414" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="416" count="0" type="stmt"/>
+      <line num="419" count="0" type="stmt"/>
+      <line num="421" count="0" type="stmt"/>
     </file>
   </project>
 </coverage>

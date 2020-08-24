@@ -176,34 +176,34 @@
                                 <h3 class="footer_title">Our Departments</h3>
                                 <ul class="links">
                                     <li>
-                                        <a href="#">Ophthalmology</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dermatology</a>
-                                    </li>
-                                    <li>
                                         <a href="#">Cardiology</a>
                                     </li>
                                     <li>
-                                        <a href="#">Neurology</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Paediatrics</a>
+                                        <a href="#">Scan</a>
                                     </li>
                                     <li>
                                         <a href="#">Dental</a>
                                     </li>
                                     <li>
-                                        <a href="#">Nuclear</a>
+                                        <a href="#">X-ray</a>
                                     </li>
                                     <li>
-                                        <a href="#">magnetic</a>
+                                        <a href="#">Dermatology</a>
                                     </li>
                                     <li>
-                                        <a href="#">Pregnancy</a>
+                                        <a href="#">ECG</a>
                                     </li>
                                     <li>
-                                        <a href="#">Psychiatry</a>
+                                        <a href="#">Neurology</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blood Test</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ophthalmology</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pharmacy</a>
                                     </li>
                                 </ul>
                             </div>
