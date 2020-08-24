@@ -30,28 +30,6 @@
             </div>
         </nav>
 
-        <div class="modal1" id="id01">
-            <form class="modal1-content animate">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                </div>
-                <div class="containers">
-                    <signin></signin>
-                </div>
-            </form>
-        </div>
-
-        <div class="modal1" id="id02">
-            <form class="modal1-content animate">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                </div>
-                <div class="containers">
-                    <signup></signup>
-                </div>
-            </form>
-        </div>
-
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -82,6 +60,28 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
+    </div>
+
+    <div class="modal1" id="id01">
+        <form class="modal1-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="containers">
+                <signin></signin>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal1" id="id02">
+        <form class="modal1-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="containers">
+                <signup></signup>
+            </div>
+        </form>
     </div>
 
     <div id="doctors">
@@ -280,6 +280,12 @@ export default {
   },
   created () {
     this.get_data()
+  },
+  mounted: function () {
+    this.$root.$on('Close signup tab', (text) => { // here you need to use the arrow function
+      // console.log(text)
+      document.getElementById('id02').style.display = 'none'
+    })
   },
   methods: {
     forceRerender () { // Refresh a particular div (initially set renderComponent: true, add v-if="renderComponent" to that particular div, call this.forceRerender() where you want)

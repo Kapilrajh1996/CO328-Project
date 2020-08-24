@@ -35,7 +35,7 @@
             </label>
         </div>
         <div class="form-group">
-            <button type="button" class="btn btn-primary btn-lg disabled" id="signup_button" v-bind:disabled="!isfilled" v-on:click="createAccount()">Sign Up</button>
+            <button type="button" class="btn btn-primary btn-lg" id="signup_button" v-bind:disabled="!isfilled" v-on:click="createAccount()">Sign Up</button>
         </div>
         <!-- <div class="hint-text">
             Already have an account?
@@ -112,6 +112,7 @@ export default {
             if (response.data == 'User account created Successfully') {
               alert(response.data)
               this.empty()
+              this.$root.$emit('Close signup tab', 'Close signup tab')
             } else {
               alert(response.data)
             }
