@@ -162,9 +162,8 @@
                                     </a>
                                 </div>
                                 <p class="address_text">
-                                    Lorem ipsum dolor sit amet,
-                                    <br />consectetur adipiscing elit, sed do
-                                    <br />eiusmod tempor incididunt ut labore.
+                                    Our vision is to progress medical services and
+                                    speciality offerings in response to changing customer needs and trends through health, healing, and comfort.
                                 </p>
                             </div>
                         </div>
@@ -173,10 +172,10 @@
                                 <h3 class="footer_title">Our Departments</h3>
                                 <ul class="links">
                                     <li>
-                                        <a href="#">Births</a>
+                                        <a href="#">Ophthalmology</a>
                                     </li>
                                     <li>
-                                        <a href="#">Pulmonary</a>
+                                        <a href="#">Dermatology</a>
                                     </li>
                                     <li>
                                         <a href="#">Cardiology</a>
@@ -185,7 +184,7 @@
                                         <a href="#">Neurology</a>
                                     </li>
                                     <li>
-                                        <a href="#">Traumatology</a>
+                                        <a href="#">Paediatrics</a>
                                     </li>
                                     <li>
                                         <a href="#">Dental</a>
@@ -200,13 +199,7 @@
                                         <a href="#">Pregnancy</a>
                                     </li>
                                     <li>
-                                        <a href="#">For disabled</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">X-ray</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Prostheses</a>
+                                        <a href="#">Psychiatry</a>
                                     </li>
                                 </ul>
                             </div>
