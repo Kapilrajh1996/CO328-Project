@@ -16,10 +16,10 @@ INSERT INTO doctor (name, age, username, password, contact_no, email, address, d
 
 
 INSERT INTO user (name, username, password, age, contact_no, email, address, active) VALUES
-('User1', 'user1', '1234', 26, 0774857653, 'user1@gmail.com', 'Kandy', false),
-('User2', 'user2', '1234', 22, 0718079586, 'user2@gmail.com', 'Vavuniya', false),
-('User3', 'user3', '1234', 19, 0770675843, 'user3@gmail.com', 'Colombo', false),
-('User4', 'user4', '1234', 55, 0776093821, 'user4@gmail.com', 'Galle', false);
+('User1', 'user1', 'Thaksha17', 26, 0774857653, 'user1@gmail.com', 'Kandy', false),
+('User2', 'user2', 'Thaksha17', 22, 0718079586, 'user2@gmail.com', 'Vavuniya', false),
+('User3', 'user3', 'Thaksha17', 19, 0770675843, 'user3@gmail.com', 'Colombo', false),
+('User4', 'user4', 'Thaksha17', 55, 0776093821, 'user4@gmail.com', 'Galle', false);
 
 
 INSERT INTO schedule (date, from_time, to_time, doctorid) VALUES
